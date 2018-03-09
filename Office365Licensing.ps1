@@ -1,5 +1,6 @@
-﻿# PowerShell script to quickly check Office 365 licensing status on a given user.
-# Andy Stoltenberg (2/2016)
+# PowerShell tool to quickly check Office 365 licensing status on a given user.
+# Author: Andy Stoltenberg
+# Created: 2/2016
 
 # Authenticates to Office 365 with your own UPN and universal password
 $MSOLCred = get-credential -Message "Please enter your Office 365 UPN and Password"
