@@ -20,5 +20,3 @@ execution policies, use: Get-Help Set-ExecutionPolicy -Full
 Once this tool is executed, you will be prompted for your personal Office 365 UPN and associated password to authenticate to Microsoft 
 online services. You will then be prompted to enter the UPN for the user in question that you would like to check the licensing 
 status of. To check another user, simply re-run the script.
-  
-Built: 2/2016
