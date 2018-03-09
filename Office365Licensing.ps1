@@ -13,12 +13,12 @@
 #   Azure AD Module: http://go.microsoft.com/fwlink/p/?linkid=236297
 
 # Authenticates to Office 365 with your own UPN and universal password
-$MSOLCred = get-credential -Message "Please enter your Office 365 UPN and Universal Password"
+$MSOLCred = get-credential -Message "Please enter your Office 365 UPN and Password"
 
 Connect-MsolService -Credential $MSOLCred
 
 # Prompt for the user's User Principal Name (UPN)
-[string]$UPN=Read-Host "What is the user's Office 365 UPN (ex: username@wwu.edu)?"
+[string]$UPN=Read-Host "What is the user's Office 365 UPN (ex: username@yourdomain.com)?"
 
 # Get user's Office 365 details based on provided UPN and output license info to a list
 Get-MsolUser -UserPrincipalName $UPN | Format-List -Property DisplayName, IsLicensed, Licenses
